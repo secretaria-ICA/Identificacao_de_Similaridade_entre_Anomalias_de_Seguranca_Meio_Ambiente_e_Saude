@@ -1,5 +1,4 @@
-<!-- antes de enviar a versão final, solicitamos que todos os comentários, colocados para orientação ao aluno, sejam removidos do arquivo -->
-# Título do Trabalho
+# Identificação de similaridade em anomalias de Segurança, Meio Ambiente e Saúde
 
 #### Alunas: Andrea Pitol Ferreira e Ludmila Junca Lopes 
 #### Orientadora: Leonardo Mendoza
