@@ -38,7 +38,7 @@ Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis
 
 ### 4. Conclusões
 
-Os resultados apresentados mostram que a abordagem empregada é factível para identificar similaridade, com base na descrição textual, entre anomalias de segurança, meio ambiente e saúde. O emprego de técnicas de Processamento de Linguagem Natural 
+Os resultados apresentados mostram que a abordagem empregada é factível para identificar similaridade, com base na descrição textual, entre anomalias de segurança, meio ambiente e saúde. 
 
 ---
 
