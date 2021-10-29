@@ -51,7 +51,7 @@ Os resultados apresentados mostram que é factível identificar similaridade, co
 
 ---
 
-Matrícula: 123.456.789 e 192.671.014
+Matrícula: 192.671.014 e 192.671.065
 
 Pontifícia Universidade Católica do Rio de Janeiro
 
