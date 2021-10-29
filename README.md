@@ -34,11 +34,11 @@ A abordagem Doc2Vec teve que ser abortada por incompatibilidade com da arquitetu
 
 ### 3. Resultados
 
-Para avaliação dos resultados e definição do valor de cosseno a ser utilizado como limiar para definir se dois registros são similares foi gerado um gabarito, formado pelo conjunto de mil pares ordenados de anomalias com a respectiva classsificação quanto a similaridade entre elas. Ao comparar os resultados obtidos com o gabarito, verificou-se que 0.65 é o limiar adequado para o problema em questão. Observou-se que utilizando esse limiar, a acurárcia do algoritmo foi de aproximadamente 70%. 
+Para avaliação dos resultados e definição do valor de cosseno a ser utilizado como limiar para definir se dois registros são similares foi gerado um gabarito, formado pelo conjunto de mil pares ordenados de anomalias, com a respectiva classsificação quanto a similaridade entre elas. Ao comparar os resultados obtidos com o gabarito, verificou-se que 0.65 é o limiar adequado para o problema em questão. Observou-se que utilizando esse limiar, a acurárcia do algoritmo foi de aproximadamente 70%, resultado considerado satisfatório pelos usuários envolvidos no projeto.
 
 ### 4. Conclusões
 
-Os resultados apresentados mostram que a abordagem empregada é factível para identificar similaridade, com base na descrição textual, entre anomalias de segurança, meio ambiente e saúde. 
+Os resultados apresentados mostram que a abordagem empregada é factível para identificar similaridade, com base na descrição textual, entre anomalias de segurança, meio ambiente e saúde. Como trabalho futuro, sugere-se a experimentos com BERT e sent2vec, que são técnicas mais modernas e que conseguem capturar melhor o contexto envolvido.
 
 ---
 
