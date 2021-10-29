@@ -25,12 +25,20 @@ As técnicas de Processamento de Linguagem Natural possibilitam que textos sejam
 
 ### 2. Modelagem
 
+A modelagem do problema se iniciou pela análise exploratória dos dados, cujo objetivo foi compreender um pouco mais sobre o dataset disponível, a fim de observar características que pudessem subsidiar os passos posteriores do processo. O dataset utilizado é composto por 3XX.XXX registros de anomalias de segurança, meio ambiente e saúde, e contém como colunas o código de identificação da anomalia e a descrição textual da mesma. Essa etapa evidenciou o quanto as descrições são heterogêneas, tendo sido constadas diferenças significativas no estilo de escrita, além da existência de erros ortográficos. A média de palavras por registro foi de XX, apresentado como máxima XX, mínima XX e desvio padrão XX. Também foram avaliadas as principais classes gramaticais presentes. Conforme esperado, há maior prevalência de verbos e substantivos. Como as demais classes gramaticais foram pouco significativas, não foi considerado pertinente aplicar filtro para restrição.
 
-Para fazer a análise de similaridade, inicialmente, foram consideradas 3 possíveis abordagens:
+A etapa seguinte tratou do pré-processamento dos dados. Foram aplicados os seguintes tratamentos: padronização dos textos em formato unicode, remoção de pontuação, remoção de números, remoção de múltiplos espaços em branco, remoção de palavras muito curtas, remoção de stopwords, lematização e remoção de acentos. O objetivo desses tratamentos foi remover caracteres e palavras pouco significativas para o domínio do problema. Através da lematização, tentou-se evitar que um mesmo conceito fosse não fosse reconhecido no caso de duas palavras de mesmo lema apresentarem flexões diverentes.
+
+Na sequência, foram geradas, a partir da descrição textual, as características a serem utilizadas no modelo. Para tal, utilizou-se TF/IDF para geração do vetor de características.
+
+Como o objetivo do projeto demanda avaliar a similaridade entre todos os registros do dataset, foi gerado o produto cartesiano dos registros e posterior filtro dos pares ordenados formados por dois registros iguais e também registros equivalentes, em que a diferença entre eles se dá apenas pela ordem em que os mesmos aparecem. 
+
+Por fim, calculou-se o cosseno entre os vetores de características de cada par ordenado. Em função do grande número de registros a serem processados, o código foi desenvolvido utilizando Databricks e Spark, abordagens adequadas para problemas que requerem processamento distribuído.
+
+Como estudos adicionais na fase de modelagem, foram consideradas as seguintes abordagens:
 -Doc2Vec
--Cosseno
 -LDA+Cosseno
-A abordagem Doc2Vec teve que ser abortada por incompatibilidade com da arquitetura disponível na empresa e inviabilidade de ajustes devido ao cronograma. Já a abordagem Cosseno, apesar de "ingênua", se mostrou aderente ao problema e à natureza dos textos analisados. A terceira implementação, LDA+Cosseno, foi uma tentativa de melhoria nos resultados obtidos com o cosseno. No entanto, mostrou-se computacionalmente custosa sem gerar melhorias que justificassem seu uso.
+O emprego do Doc2Vec teve que ser abortado por incompatibilidade com a arquitetura disponível na empresa e a inviabilidade de ajustes devido ao cronograma. A alternativa LDA+Cosseno foi uma tentativa de melhoria nos resultados obtidos com o cosseno. No entanto, mostrou-se computacionalmente custosa sem gerar melhorias que justificassem seu uso.
 
 ### 3. Resultados
 
@@ -38,7 +46,7 @@ Para avaliação dos resultados e definição do valor de cosseno a ser utilizad
 
 ### 4. Conclusões
 
-Os resultados apresentados mostram que a abordagem empregada é factível para identificar similaridade, com base na descrição textual, entre anomalias de segurança, meio ambiente e saúde. Como trabalho futuro, sugere-se a experimentos com BERT e sent2vec, que são técnicas mais modernas e que conseguem capturar melhor o contexto envolvido.
+Os resultados apresentados mostram que é factível identificar similaridade, com base na descrição textual, entre anomalias de segurança, meio ambiente e saúde. A abordagem TF/IDF + Cosseno, apesar de "ingênua", se mostrou aderente ao problema e à natureza dos textos analisados. Como trabalho futuro, sugere-se experimentos com BERT e sent2vec, que são técnicas mais modernas e que conseguem capturar melhor o contexto envolvido.
 
 ---
 
