@@ -42,7 +42,7 @@ Os resultados apresentados mostram que a abordagem empregada é factível para i
 
 ---
 
-Matrícula: 123.456.789
+Matrícula: 123.456.789 e 192.671.014
 
 Pontifícia Universidade Católica do Rio de Janeiro
 
