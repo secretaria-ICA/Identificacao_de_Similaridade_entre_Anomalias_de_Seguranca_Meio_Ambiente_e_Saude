@@ -1,6 +1,6 @@
 # Identificação de Similaridade entre Anomalias de Segurança, Meio Ambiente e Saúde
 
-#### Alunas: Andrea Pitol Ferreira e [Ludmila Junca Lopes](https://github.com/milajunker)
+#### Alunas: [Andrea Pitol Ferreira](https://github.com/afpitol) e [Ludmila Junca Lopes](https://github.com/milajunker)
 #### Orientador: [Leonardo Forero Mendoza](https://github.com/leofome8)
 
 ---
