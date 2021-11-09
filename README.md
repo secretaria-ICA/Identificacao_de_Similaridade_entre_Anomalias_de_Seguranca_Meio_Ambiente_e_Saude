@@ -1,11 +1,13 @@
 # Identificação de Similaridade entre Anomalias de Segurança, Meio Ambiente e Saúde
 
-#### Alunas: Andrea Pitol Ferreira e Ludmila Junca Lopes (https://github.com/milajunker/tccpucrj)
-#### Orientador: Leonardo Mendoza
+#### Alunas: Andrea Pitol Ferreira e [Ludmila Junca Lopes](https://github.com/milajunker)
+#### Orientador: [Leonardo Forero Mendoza] (https://github.com/leofome8)
 
 ---
 
 Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
+
+[Link para o código.](https://github.com/milajunker/tccpucrj)
 
 ### Resumo
 
